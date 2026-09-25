@@ -29,6 +29,9 @@ public class Ejemplo7 {
                 System.out.println("  arrayBytes[" + i + "] = " + arrayBytes[i] + " -> '" + (char) arrayBytes[i] + "'");
             }
 
+
+            
+
         } catch (Exception e) {
             // TODO: handle exception
         }
