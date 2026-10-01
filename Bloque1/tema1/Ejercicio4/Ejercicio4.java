@@ -10,21 +10,24 @@ public class Ejercicio4 {
 
         try {
 
-            int bufferSize = 4*1024;
+            int contador = 0;
+
+            int bufferSize = 1024;
             byte[] buffer = new byte[bufferSize];
-            BufferedInputStream entrada = new BufferedInputStream(new FileInputStream("./Ejercicio4/foto.jpg"), bufferSize);
+            BufferedInputStream entrada = new BufferedInputStream(new FileInputStream("./Ejercicio4/foto.jpg"));
 
-            BufferedOutputStream salida = new BufferedOutputStream(new FileOutputStream("./Ejercicio4/fotoCopia.jpg"), bufferSize);
+            BufferedOutputStream salida = new BufferedOutputStream(new FileOutputStream("./Ejercicio4/fotoCopia.jpg"));
 
-            int bytesLeidos = entrada.read(buffer);
+            int bytesLeidos;
 
-            while (bytesLeidos != -1){
+            while ((bytesLeidos = entrada.read(buffer)) != -1){
                 salida.write(buffer, 0, bytesLeidos);
-                bytesLeidos = entrada.read(buffer);
+                contador++;
             }
 
             entrada.close();
             salida.close();
+            System.out.println(contador);
         } catch (Exception e) {
             System.out.println("Error "+e.getMessage());
         }
