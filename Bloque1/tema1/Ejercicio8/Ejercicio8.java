@@ -24,6 +24,8 @@ public class Ejercicio8 {
             String titulacion = sc.nextLine();
             System.out.println("Observaciones:");
             String observaciones = sc.nextLine();
+
+            sc.close();
             String texto = "----- Formulario de Matriculacion -----" +
                     "\nNombre y Apellidos: " + nombre +
                     "\nEmail: " + email +
@@ -31,7 +33,7 @@ public class Ejercicio8 {
                     "\nGenero: " + genero +
                     "\nTitulacion de Acceso: " + titulacion +
                     "\nObservaciones: " + observaciones +
-                    "\n---------------------------------------";
+                    "\n---------------------------------------\n";
 
             try {
                 BufferedWriter bw = new BufferedWriter(new FileWriter("./Ejercicio8/matriculas.txt", true));

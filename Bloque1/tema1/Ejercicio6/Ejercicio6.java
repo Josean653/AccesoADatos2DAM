@@ -32,6 +32,7 @@ public class Ejercicio6 {
                 }
 
                 file.close();
+                sc.close();
 
             } catch (Exception e) {
                 // TODO: handle exception

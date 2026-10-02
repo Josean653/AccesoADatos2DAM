@@ -1,8 +1,0 @@
------ Formulario de Matriculacion -----
-Nombre y Apellidos: Juan Perez Garcia
-Email: juan.perez@gmail.com
-Fecha de nacimiento: 12/04/2005
-Genero: Masculino
-Titulacion de Acceso: FP Grado Medio
-Observaciones: Interesado en horario de tarde
----------------------------------------
